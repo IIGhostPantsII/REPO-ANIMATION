@@ -16,7 +16,7 @@ public class Fade : MonoBehaviour
     [SerializeField] private bool _fromFull;
     [SerializeField] private bool _fromFunction;
 
-    private void Awake()
+    private void OnEnable()
     {
         imageComp = GetComponent<Image>();
         textMeshProComp = GetComponent<TextMeshProUGUI>();
